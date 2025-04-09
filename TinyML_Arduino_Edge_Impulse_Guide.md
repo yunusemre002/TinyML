@@ -2,7 +2,44 @@
 # Deploying a TinyML Model on Arduino Nano 33 BLE Using Edge Impulse
 
 ## Index
+
 1. [Setting Up Edge Impulse and Connecting Arduino](#setting-up-edge-impulse-and-connecting-arduino)
+
+   1.1 [Creating an Edge Impulse Account](#creating-an-edge-impulse-account)
+
+   1.2 [Installing Required Software](#installing-required-software)
+
+   1.3 [Connecting Arduino Nano 33 BLE](#connecting-arduino-nano-33-ble)
+
+2. [Data Collection](#data-collection)
+
+3. [Creating an Impulse](#creating-an-impulse)
+
+   3.1 [Setting Up the Impulse](#setting-up-the-impulse)
+
+   3.2 [Choosing the Processing Block](#choosing-the-processing-block)
+
+   3.3 [Selecting the Learning Block](#selecting-the-learning-block)
+
+   3.4 [Output Features](#output-features)
+
+4. [Model Training](#model-training)
+
+5. [Model Testing](#model-testing)
+
+6. [Deploying the Model to Arduino](#deploying-the-model-to-arduino)
+
+   6.1 [Exporting the Model](#exporting-the-model)
+
+   6.2 [Adding the Library to Arduino IDE](#adding-the-library-to-arduino-ide)
+
+   6.3 [Uploading the Model](#uploading-the-model)
+
+   6.4 [Monitoring the Output](#monitoring-the-output)
+
+7. [Running the Model Independently on Arduino](#running-the-model-independently-on-arduino)
+
+<!-- 1. [Setting Up Edge Impulse and Connecting Arduino](#setting-up-edge-impulse-and-connecting-arduino)
    1.1 [Creating an Edge Impulse Account](#creating-an-edge-impulse-account)  
    1.2 [Installing Required Software](#installing-required-software)  
    1.3 [Connecting Arduino Nano 33 BLE](#connecting-arduino-nano-33-ble)  
@@ -19,7 +56,7 @@
    6.2 [Adding the Library to Arduino IDE](#adding-the-library-to-arduino-ide)  
    6.3 [Uploading the Model](#uploading-the-model)  
    6.4 [Monitoring the Output](#monitoring-the-output)  
-7. [Running the Model Independently on Arduino](#running-the-model-independently-on-arduino)
+7. [Running the Model Independently on Arduino](#running-the-model-independently-on-arduino) -->
 
 ## Introduction
 Falls can be dangerous, especially for elderly individuals or people with mobility issues. In this tutorial, we will build a fall detection system using Arduino Nano 33 BLE and Edge Impulse, enabling real-time motion classification with TinyML.
@@ -41,8 +78,7 @@ This guide will walk you through the entire process, from setting up Edge Impuls
 
 The Arduino Nano 33 BLE is a tiny development board with a Cortex-M4 microcontroller, motion sensors, and BLE - and it's fully supported by Edge Impulse. You'll be able to sample raw data, build models, and deploy trained machine learning models directly from the studio.
 
-<!-- ![Fall Detection Illustration](fall-detection-illustration.png)
-*Image Source: [example.com](https://example.com)* -->
+
 ## Edge Impulse
 ![Edge Impulse](photos/edge.png)
 *Image Source: [edgeimpulse.com/](https://www.edgeimpulse.com/blog/getting-started-with-edge-impulse/)*
