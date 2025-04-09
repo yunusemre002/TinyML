@@ -3,41 +3,41 @@
 
 ## Index
 
-1. [Setting Up Edge Impulse and Connecting Arduino](#setting-up-edge-impulse-and-connecting-arduino)
+1. [Setting Up Edge Impulse and Connecting Arduino](#1-setting-up-edge-impulse-and-connecting-arduino)
 
-   1.1 [Creating an Edge Impulse Account](#creating-an-edge-impulse-account)
+   1.1 [Creating an Edge Impulse Account](#11-creating-an-edge-impulse-account)
 
-   1.2 [Installing Required Software](#installing-required-software)
+   1.2 [Installing Required Software](#12-installing-required-software)
 
-   1.3 [Connecting Arduino Nano 33 BLE](#connecting-arduino-nano-33-ble)
+   1.3 [Connecting Arduino Nano 33 BLE](#13-connecting-arduino-nano-33-ble)
 
-2. [Data Collection](#data-collection)
+2. [Data Collection](#2-data-collection)
 
-3. [Creating an Impulse](#creating-an-impulse)
+3. [Creating an Impulse](#3-creating-an-impulse)
 
-   3.1 [Setting Up the Impulse](#setting-up-the-impulse)
+   3.1 [Setting Up the Impulse](#31-setting-up-the-impulse)
 
-   3.2 [Choosing the Processing Block](#choosing-the-processing-block)
+   3.2 [Choosing the Processing Block](#32-choosing-the-processing-block)
 
-   3.3 [Selecting the Learning Block](#selecting-the-learning-block)
+   3.3 [Selecting the Learning Block](#33-selecting-the-learning-block)
 
-   3.4 [Output Features](#output-features)
+   3.4 [Output Features](#34-output-features)
 
-4. [Model Training](#model-training)
+4. [Model Training](#4-model-training)
 
-5. [Model Testing](#model-testing)
+5. [Model Testing](#5-model-testing)
 
-6. [Deploying the Model to Arduino](#deploying-the-model-to-arduino)
+6. [Deploying the Model to Arduino](#6-deploying-the-model-to-arduino)
 
-   6.1 [Exporting the Model](#exporting-the-model)
+   6.1 [Exporting the Model](#61-exporting-the-model)
 
-   6.2 [Adding the Library to Arduino IDE](#adding-the-library-to-arduino-ide)
+   6.2 [Adding the Library to Arduino IDE](#62-adding-the-library-to-arduino-ide)
 
-   6.3 [Uploading the Model](#uploading-the-model)
+   6.3 [Uploading the Model](#63-uploading-the-model)
 
-   6.4 [Monitoring the Output](#monitoring-the-output)
+   6.4 [Monitoring the Output](#64-monitoring-the-output)
 
-7. [Running the Model Independently on Arduino](#running-the-model-independently-on-arduino)
+7. [Running the Model Independently on Arduino](#7-running-the-model-independently-on-arduino)
 
 <!-- 1. [Setting Up Edge Impulse and Connecting Arduino](#setting-up-edge-impulse-and-connecting-arduino)
    1.1 [Creating an Edge Impulse Account](#creating-an-edge-impulse-account)  
