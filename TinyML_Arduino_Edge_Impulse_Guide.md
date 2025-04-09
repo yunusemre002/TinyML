@@ -41,7 +41,12 @@ This guide will walk you through the entire process, from setting up Edge Impuls
 
 The Arduino Nano 33 BLE is a tiny development board with a Cortex-M4 microcontroller, motion sensors, and BLE - and it's fully supported by Edge Impulse. You'll be able to sample raw data, build models, and deploy trained machine learning models directly from the studio.
 
+<!-- ![Fall Detection Illustration](fall-detection-illustration.png)
+*Image Source: [example.com](https://example.com)* -->
 ## Edge Impulse
+![Edge Impulse](photos/edge.png)
+*Image Source: [edgeimpulse.com/](https://www.edgeimpulse.com/blog/getting-started-with-edge-impulse/)*
+
 Edge Impulse is a machine learning platform designed for embedded devices like Arduino, Raspberry Pi, and other microcontrollers. It allows users to easily collect sensor data, train models, and deploy them directly to edge devices for real-time inference.
 
 With Edge Impulse, you can:
@@ -55,6 +60,8 @@ It’s widely used for applications like fall detection, sound classification, g
 
 ### 1.1 Creating an Edge Impulse Account
 Go to [Edge Impulse Studio](https://studio.edgeimpulse.com/signup) and create a free account.
+
+![Edge Impuls Main Screen](photos/main_screen.png)
 
 ### 1.2 Installing Required Software
 To set this device up in Edge Impulse, you will need to install the following software:
@@ -71,6 +78,10 @@ With all the software in place, it's time to connect the development board to Ed
 2. Press RESET twice to launch into the bootloader. The on-board LED should start pulsating to indicate this.
 3. Press RESET twice quickly to launch the bootloader on the Arduino Nano 33 BLE.
 
+<img src="photos/video.webp" style="width:700px; height:auto;">
+
+*Image Source: [docs.edgeimpulse](https://docs.edgeimpulse.com/docs/edge-ai-hardware/mcu/arduino-nano-33-ble-sense)*
+
 #### Update the firmware
 The development board does not come with the right firmware yet. To update the firmware:
 1. Download the latest Edge Impulse firmware and unzip the file.
@@ -84,14 +95,18 @@ edge-impulse-daemon
 ```
 This will start a wizard which will ask you to log in and choose an Edge Impulse project. If you want to switch projects, run the command with `--clean`.
 
-Alternatively, recent versions of Google Chrome and Microsoft Edge can collect data directly from your development board, without the need for the Edge Impulse CLI. See this [blog post](https://www.edgeimpulse.com/docs/cli/collecting-data).
+Alternatively, recent versions of Google Chrome and Microsoft Edge can collect data directly from your development board, without the need for the Edge Impulse CLI. See this [blog post](https://edgeimpulse.com/blog/collect-sensor-data-straight-from-your-web-browser/).
 
 #### Verifying that the device is connected
 That's all! Your device is now connected to Edge Impulse. To verify this, go to your Edge Impulse project, and click Devices. The device will be listed here.
 
+
+
 ## 2. Data Collection
 - Open Edge Impulse Studio and create a new project.
 - Navigate to the Data Acquisition section and collect labeled data using Arduino sensors.
+
+![Data collect](photos/data_collect.png)
 
 ### 2.1 Types of Incoming Data
 - **Accelerometer**: Measures linear acceleration.
@@ -101,6 +116,9 @@ That's all! Your device is now connected to Edge Impulse. To verify this, go to 
 ## 3. Creating an Impulse
 
 In this step, we define how our model processes and learns from data.
+
+
+![Data collect](photos/create_impuls.png)
 
 ### 3.1 Setting Up the Impulse
 Go to Impulse Design in Edge Impulse Studio.
@@ -129,11 +147,18 @@ These come automatically from the labels of the data (e.g., "Fall", "Walk", "Idl
 - Adjust model parameters (e.g., epochs, learning rate) or use default settings.
 - You can modify the architecture by adding layers or neurons.
 
-There is a retraining section between the test and the classifier, but you don't have to use it. Click for more information.
+
+![Train 1](photos/train_1.png)
+![Train 2](photos/train_2.png)
+
+
+There is a retraining section between the test and the classifier, but you don't have to use it. [Click for more information.](https://docs.edgeimpulse.com/docs/edge-impulse-studio/retrain-model)
 
 ## 5. Model Testing
 - Evaluate the model on the test dataset.
 - Use the **Confusion Matrix** to analyze performance.
+![test](photos/test_2.png)
+![test_2](photos/test.png)
 
 ## 6. Deploying the Model to Arduino
 
@@ -142,21 +167,29 @@ There is a retraining section between the test and the classifier, but you don't
 - Select **Arduino Library** and click **Build**.
 - Download the generated `.zip` file.
 
+![deploy](photos/deploy.png)
+
 ### 6.2 Adding the Library to Arduino IDE
 - Open Arduino IDE.
 - Go to **Sketch > Include Library > Add .ZIP Library...**
 - Import the downloaded `.zip` file.
+
+![ardino_ide](photos/add_lib.png)
 
 ### 6.3 Uploading the Model
 - Connect the Arduino board via USB.
 - Select **Board**: Arduino Nano 33 BLE.
 - Select the correct **COM port**.
 - Open an example sketch from the imported library.
-- Click **Upload** to flash the model to the board.
+
+![open example](photos/open_example.png)
+![upload](photos/upload.png)
 
 ### 6.4 Monitoring the Output
 - Open **Serial Monitor** (**Tools > Serial Monitor**).
 - The Serial Monitor will display real-time model predictions.
+
+![serial monitor](photos/serial_monitor.png)
 
 ## 7. Running the Model Independently on Arduino
 Once uploaded, the TinyML model can run on Arduino without a computer. The device will classify real-time sensor data autonomously.
