@@ -19,8 +19,7 @@ We have also included the dataset used to train the model. It was exported from 
 
 ## 📝 Code (Arduino Library)
 
-The `fall-detection-ardino_lib.zip` file contains a library created through Edge Impulse. This library can be added to the Arduino IDE, and the example code inside can be run by following the steps in the tutorial.
-
+The [`fall-detection-ardino_lib.zip`](fall-detection-ardino_lib.zip) file contains a library created through Edge Impulse. This library can be added to the Arduino IDE, and the example code inside can be run by following the steps in the tutorial.
 
 
 ## 📄 Project Report
