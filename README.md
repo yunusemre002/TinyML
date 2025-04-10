@@ -15,12 +15,12 @@ You can access the Edge Impulse project we used via the following public link:
 ## 📁 Dataset
 
 We have also included the dataset used to train the model. It was exported from Edge Impulse and can be found in this repository:  
-📦 **[dataset.zip](dataset.zip)**
+📦 **[Dataset.zip](Dataset.zip)**
 
 ## 📄 Project Report
 
 The detailed report of the project is available in this repository. It explains the problem, methodology, data collection, model training, and results.
 
-> **Project Report (English Translation):**  
+> **Project Report:**  
 > This project investigates fall detection using an embedded machine learning approach. Accelerometer and gyroscope data were collected from the Arduino Nano 33 BLE Sense board under different motion scenarios. A classification model was trained using Edge Impulse’s platform, and then deployed to the device. The system aims to detect falls in real time and trigger appropriate alerts, demonstrating the feasibility of TinyML solutions on low-power hardware.
 
