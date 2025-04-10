@@ -17,6 +17,12 @@ You can access the Edge Impulse project we used via the following public link:
 We have also included the dataset used to train the model. It was exported from Edge Impulse and can be found in this repository:  
 📦 **[Dataset.zip](Dataset.zip)**
 
+# 📦 Code (Arduino Library)
+
+The `fall-detection-ardino_lib.zip` file contains a library created through Edge Impulse. This library can be added to the Arduino IDE, and the example code inside can be run by following the steps in the tutorial.
+
+
+
 ## 📄 Project Report
 
 The detailed report of the project is available in this repository. It explains the problem, methodology, data collection, model training, and results.
